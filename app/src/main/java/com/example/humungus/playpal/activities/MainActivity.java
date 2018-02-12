@@ -1,4 +1,4 @@
-package com.example.humungus.playpal;
+package com.example.humungus.playpal.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
