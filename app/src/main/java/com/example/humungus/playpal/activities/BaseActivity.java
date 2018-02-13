@@ -3,6 +3,8 @@ package com.example.humungus.playpal.activities;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.humungus.playpal.R;
+
 public class BaseActivity extends AppCompatActivity {
 
     @Override
