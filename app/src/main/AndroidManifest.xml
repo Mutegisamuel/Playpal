@@ -22,6 +22,12 @@
         </activity>
         <activity android:name=".activities.NowPlayingActivity">
         </activity>
+        <activity android:name=".activities.PlaylistDetailActivity">
+        </activity>
+        <activity android:name=".activities.SearchActivity">
+        </activity>
+        <activity android:name=".activities.SettingsActivity">
+        </activity>
     </application>
 
 </manifest>

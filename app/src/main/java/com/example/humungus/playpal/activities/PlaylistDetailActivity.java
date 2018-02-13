@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.humungus.playpal.R;
 
-public class NowPlayingActivity extends AppCompatActivity {
+public class PlaylistDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_now_playing);
+        setContentView(R.layout.activity_playlist_detail);
     }
 }
