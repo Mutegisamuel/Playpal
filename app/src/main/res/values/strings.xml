@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">PlayPal</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <color name="app_name">#111</color>
 </resources>
