@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.humungus.playpal"
-        minSdkVersion 21
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -26,8 +26,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.globus-ltd:recyclerview:1.0.2'
     compile 'com.android.support:cardview-v7:26.1.0'
-    compile 'com.android.support:recyclerview-v7:26.1.0'
-    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
     compile 'com.airbnb.android:lottie:2.5.0-rc1'
+
+    compile 'org.jetbrains:annotations-java5:15.0'
 }

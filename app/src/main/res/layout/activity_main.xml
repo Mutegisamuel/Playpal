@@ -1,23 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.humungus.playpal.MainActivity"
-    android:orientation="vertical">
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.humungus.playpal.MainActivity">
 
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_weight="1"
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary">
 
-    <SeekBar
-        android:id="@+id/seekbar"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/stika_font"
+                android:gravity="center"
+                android:text="Playpal"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@color/colorPrimary"
+                android:src="@android:drawable/ic_menu_search" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0" />
+        android:layout_weight="1"
+        android:divider="@drawable/listview_dividers"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/icons"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/selectedfile"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:hint="no song selected"
+            android:singleLine="true"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="75dp"
+            android:paddingTop="7dp">
+
+            <ImageButton
+                android:id="@+id/prevButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/playButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="#ffffff"
+                android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_skip_next_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

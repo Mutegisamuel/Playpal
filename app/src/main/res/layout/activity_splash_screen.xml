@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.humungus.playpal.splashScreen"
+    android:background="#ffffff">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="start.json"
+        app:lottie_loop="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/animation_view"
+        android:layout_alignStart="@+id/animation_view"
+        android:layout_below="@+id/animation_view"
+        android:fontFamily="@font/stika_font"
+        android:text="Play"
+        android:textColor="@color/colorAccent"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:fontFamily="@font/stika_font"
+        android:text="pal"
+        android:textColor="#8d021f"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/poweredby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lot"
+        android:layout_alignBottom="@+id/lot"
+        android:layout_toLeftOf="@+id/lot"
+        android:layout_toStartOf="@+id/lot"
+        android:text="Powered by:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:fontFamily="@font/stika_font"
+        android:text="lottie"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic" />
+
+</RelativeLayout>
